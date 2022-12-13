@@ -8,7 +8,7 @@ import static org.hamcrest.CoreMatchers.*;
 public class CepTest {
 
     @Test
-    public void searchAdressByZipCode(){
+    public void searchAddressByZipCode(){
         given()
                 .when()
                 .get("https://viacep.com.br/ws/88010970/json/")
@@ -22,7 +22,7 @@ public class CepTest {
     }
 
     @Test
-    public void searchAdressByStreetName(){
+    public void searchAddressByStreetName(){
         given()
                 .when()
                 .get("https://viacep.com.br/ws/SC/Florianopolis/Avenida + Itamarati/json/")
@@ -41,7 +41,7 @@ public class CepTest {
     }
 
     @Test
-    public void searchAdressByWrongZipCode(){
+    public void searchAddressByWrongZipCode(){
         given()
                 .when()
                 .get("https://viacep.com.br/ws/11111111/json/")
@@ -52,7 +52,7 @@ public class CepTest {
     }
 
     @Test
-    public void searchAdressByZipCodeXML(){
+    public void searchAddressByZipCodeXML(){
         given()
                 .when()
                 .get("https://viacep.com.br/ws/88010970/xml/")
@@ -65,7 +65,7 @@ public class CepTest {
     }
 
     @Test
-    public void searchAdressByStreetNameXML(){
+    public void searchAddressByStreetNameXML(){
         given()
                 .when()
                 .get("https://viacep.com.br/ws/SC/Florianopolis/Avenida + Itamarati/xml/")
@@ -83,7 +83,7 @@ public class CepTest {
     }
 
     @Test
-    public void searchAdressByWrongZipCodeXML(){
+    public void searchAddressByWrongZipCodeXML(){
         given()
                 .when()
                 .get("https://viacep.com.br/ws/11111111/xml/")
